@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutDetalhes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FAFAFA">
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detalhes do Estudante"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#2E7D32"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="24dp" />
+
+    <TextView
+        android:id="@+id/textNotaFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nota final: "
+        android:textSize="18sp"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/textPercentualPresenca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Percentual de presença: "
+        android:textSize="18sp"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/textSituacaoFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Situação final: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/botaoVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp" />
+
+
+</LinearLayout>

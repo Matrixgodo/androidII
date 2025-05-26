@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollViewEstatisticas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FDFDFD">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tituloEstatisticas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estatísticas da Turma"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1A237E"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="24dp" />
+
+        <TextView
+            android:id="@+id/textMediaGeral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Média geral da turma: "
+            android:textSize="18sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/textMaiorNota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aluno com maior nota: "
+            android:textSize="18sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/textMenorNota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aluno com menor nota: "
+            android:textSize="18sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/textMediaIdade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Média de idade da turma: "
+            android:textSize="18sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/textAprovados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alunos aprovados: "
+            android:textSize="18sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/textReprovados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alunos reprovados: "
+            android:textSize="18sp"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/botaoVoltarEstatisticas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voltar"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp" />
+    </LinearLayout>
+</ScrollView>
