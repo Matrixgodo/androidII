@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Estatísticas principais -->
+        <TextView
+            android:id="@+id/media_geral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Média Geral: --"
+            android:textSize="18sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/maior_nota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Maior Nota: --"
+            android:textSize="18sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/menor_nota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menor Nota: --"
+            android:textSize="18sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/media_idade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Média de Idade: --"
+            android:textSize="18sp"
+            android:padding="8dp" />
+
+        <!-- Separação visual -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginVertical="16dp" />
+
+        <!-- Título e lista de Aprovados -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aprovados"
+            android:background="@color/black"
+            android:textColor="@color/green"
+            android:textSize="20sp"
+            android:padding="8dp"
+            android:gravity="center" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/aprovados_list"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#FFFFFF"
+            android:contentDescription="lista de Aprovados"
+            android:padding="8dp" />
+
+        <!-- Título e lista de Reprovados -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reprovados"
+            android:background="@color/black"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:padding="8dp"
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/reprovados_list"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#FFFFFF"
+            android:contentDescription="lista de Reprovados"
+            android:padding="8dp" />
+    </LinearLayout>
+</ScrollView>
